@@ -1,6 +1,6 @@
 # X Video Saver
 
-A small Manifest V3 extension for Brave and Chromium browsers. It detects direct MP4 variants attached to the currently open, publicly accessible X post and offers the available resolutions as download buttons.
+A small Manifest V3 extension for Google Chrome and other Chromium-based browsers. It detects direct MP4 variants attached to the currently open, publicly accessible X post and offers the available resolutions as download buttons.
 
 ## Features
 
@@ -10,13 +10,13 @@ A small Manifest V3 extension for Brave and Chromium browsers. It detects direct
 - Keeps only video metadata in the active tab; no external service, account credentials, or cookie export.
 - Rejects non-HTTPS and non-`video.twimg.com` download URLs.
 
-## Install in Brave
+## Install in Chrome
 
-1. Open `brave://extensions` and turn on **Developer mode**.
+1. Open `chrome://extensions` and turn on **Developer mode**.
 2. Choose **Load unpacked** and select the project folder containing `manifest.json`.
 3. Open an X post with a video and reload the page after installing the extension.
 4. Let the post load (play the video if necessary), open the extension, and choose a resolution.
-5. Confirm the resulting file in Brave Downloads.
+5. Confirm the resulting file in Chrome Downloads.
 
 The extension requests `downloads` and `activeTab`, plus access to X pages and `video.twimg.com`. Review those permissions before installing.
 
