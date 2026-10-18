@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "X Video Saver",
+  "version": "0.1.0",
+  "description": "Download direct MP4 variants of videos from the current X post.",
+  "permissions": ["downloads", "activeTab"],
+  "host_permissions": ["https://video.twimg.com/*"],
+  "action": { "default_title": "X Video Saver", "default_popup": "popup.html" },
+  "content_scripts": [
+    { "matches": ["https://x.com/*", "https://twitter.com/*"], "js": ["media.js", "observer.js"], "run_at": "document_start", "world": "MAIN" },
+    { "matches": ["https://x.com/*", "https://twitter.com/*"], "js": ["media.js", "bridge.js"], "run_at": "document_start", "world": "ISOLATED" }
+  ]
+}

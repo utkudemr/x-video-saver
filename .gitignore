@@ -1,0 +1,13 @@
+# Local downloads and archives
+*.mp4
+*.zip
+
+# Dependencies / generated output
+node_modules/
+dist/
+
+# Editor and operating-system noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
